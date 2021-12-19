@@ -13,6 +13,11 @@ module.exports = {
         filename: "[name].bundle.js",
         path: __dirname + "/dist",
     },
+    devServer: {
+        static: {
+            directory: path.join(__dirname, ".")
+        }
+    },
     module: {
         rules: [
             {
